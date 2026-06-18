@@ -2,7 +2,8 @@ import IntroProposal from "./pages/IntroProposal"
 
 const App=()=>{
   return(
-    <IntroProposal/>
+    // <IntroProposal/>
+    <div>hii</div>
   )
 }
 export default App
