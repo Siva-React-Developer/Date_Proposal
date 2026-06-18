@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+#introPage>#container{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+#introPage>#container>#backgroundVideo{
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+    /* border: 1px solid black; */
+}
