@@ -1,18 +1,73 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-#introPage>#container{
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Dancing+Script:wght@500;600;700&display=swap');
+#introPage {
+  position: relative;
+  height: auto;
 }
-#introPage>#container>#backgroundVideo{
-    display: block;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    filter: brightness(70%);
-    /* border: 1px solid black; */
+#introPage > #container {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+#introPage > #container > #backgroundVideo {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+  /* border: 1px solid black; */
+}
+#introPage > #dateProposal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  border: 1px solid black;
+  padding: 50px 0px;
+  color: white;
+}
+#introPage > #dateProposal > #dateProposal_Content {
+  width: 100%;
+  border: 1px solid black;
+}
+#introPage
+  > #dateProposal
+  > #dateProposal_Content
+  > #dateProposal_Content_Quote {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+  font-weight: 500;
+}
+#introPage
+  > #dateProposal
+  > #dateProposal_Content
+  > #dateProposal_Content_Question {
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 20px;
+}
+#introPage > #dateProposal > #dateProposal_Yes_or_No {
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px 0px;
+}
+#introPage > #dateProposal > #dateProposal_Yes_or_No > .dateProposal_Buttons {
+  background: transparent;
+  outline: none;
+  border: 1px solid white;
+  padding: 15px 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
 }
