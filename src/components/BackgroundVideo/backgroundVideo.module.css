@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Dancing+Script:wght@500;600;700&display=swap');
+#backgroundMain {
+  position: relative;
+  height: auto;
+}
+#backgroundMain > #backgroundContainer {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+#backgroundMain > #backgroundContainer > #backgroundVideo {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+  /* border: 1px solid black; */
+}
