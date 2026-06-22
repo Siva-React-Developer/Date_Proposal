@@ -4,3 +4,50 @@
   margin: 0;
 }
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Dancing+Script:wght@500;600;700&display=swap');
+#container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  transform: translate(-50%,-50%);
+  border: 1px solid black;
+}
+#container>#SentencesContainer{
+  width: 100%;
+  color: white;
+  border: 1px solid black;
+}
+#container>#SentencesContainer>.SentencesContainer_info{
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+  font-weight: 500;
+}
+#container>#form{
+  width: 100%;
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+#container>#form>input{
+  height: 40px;
+  width: 350px;
+  padding:0px 20px;
+  background: transparent;
+  outline: none;
+  border: 1px solid white;
+  color: white;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: "Dancing Script", cursive;
+}
+#container>#form>input::placeholder{
+  color: white;
+}
+#container>#form>#continue{
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 25px;
+}
