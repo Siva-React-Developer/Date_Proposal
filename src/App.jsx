@@ -3,6 +3,7 @@ import BackgroundVideo from "./components/BackgroundVideo/BackgroundVideo";
 import IntroProposal from "./pages/IntroPoposal/IntroProposal";
 import UserNamePage from "./pages/GetName/UserNamePage";
 import { useEffect } from "react";
+import DatePlaces from "./pages/DatePlaces/DatePlaces";
 
 const App = () => {
   useEffect(() => {
@@ -16,6 +17,7 @@ const App = () => {
     <Routes>
       <Route element={<IntroProposal />} path="/" />
       <Route element={<UserNamePage />} path="/name" />
+      <Route element={<DatePlaces />} path="/datePlaces" />
     </Routes>
   );
 };

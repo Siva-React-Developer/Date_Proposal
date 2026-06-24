@@ -30,24 +30,37 @@
   justify-content: center;
   border: 1px solid black;
 }
-#container>#form>input{
+#container>#form>#input{
   height: 40px;
   width: 350px;
-  padding:0px 20px;
+  padding:0px 58px 0px 20px;
   background: transparent;
   outline: none;
   border: 1px solid white;
   color: white;
-  border-radius: 8px;
+  border-radius: 6px;
   font-size: 15px;
   font-family: "Dancing Script", cursive;
 }
-#container>#form>input::placeholder{
+#container>#form>#input::placeholder{
   color: white;
 }
 #container>#form>#continue{
   background: transparent;
   border: none;
   outline: none;
-  font-size: 25px;
+  font-size: 36px;
+  cursor: pointer;
+  /* margin:-4px 0px 0px -45px; */
+}
+.redinput {
+  border: 1px solid transparent;
+}
+
+.errorInput {
+  border: 1px solid red;
+}
+
+.errorInput::placeholder {
+  color: red;
 }
