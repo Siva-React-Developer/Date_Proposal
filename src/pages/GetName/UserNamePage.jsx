@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import BackgroundVideo from "../../components/BackgroundVideo/BackgroundVideo";
 import Style from "./userNamePage.module.css";
 import { useNavigate } from "react-router-dom";
-import { ProposalContext } from "../../components/ProposalContext";
+import { ProposalContext } from "../../components/ProposalProvider";
 
 const UserNamePage = () => {
   // const [name, setName] = useState("");
@@ -11,8 +11,6 @@ const UserNamePage = () => {
   const navigate = useNavigate();
   const getName = (e) => {
     e.preventDefault();
-    // console.log(name);
-    // const userName = document.getElementById("input");
     if (name.trim() === "") {
       setIsError(true);
       return;
@@ -32,7 +30,7 @@ const UserNamePage = () => {
             Tell me yours, so I can make this moment even more special. ✨
           </p>
         </div>
-        <form id={Style.form} action="">
+        <form id={Style.form} action="" onSubmit={getName}>
           <input
             type="text"
             id={Style.input}
@@ -50,10 +48,9 @@ const UserNamePage = () => {
               }
             }}
           />
-          <button onClick={getName} id={Style.continue}>
+          <button type="submit" id={Style.continue}>
             ➡️
           </button>
-          {/* <p>{name}</p> */}
         </form>
       </div>
     </div>

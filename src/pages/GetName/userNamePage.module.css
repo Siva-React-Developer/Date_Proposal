@@ -36,7 +36,6 @@
   padding:0px 58px 0px 20px;
   background: transparent;
   outline: none;
-  border: 1px solid white;
   color: white;
   border-radius: 6px;
   font-size: 15px;
@@ -54,7 +53,7 @@
   /* margin:-4px 0px 0px -45px; */
 }
 .redinput {
-  border: 1px solid transparent;
+  border: 1px solid white;
 }
 
 .errorInput {
