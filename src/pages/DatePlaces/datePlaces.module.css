@@ -1,13 +1,69 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-#Container{
-    position: absolute;
-    width: 100%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    border: 1px solid black;
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Dancing+Script:wght@500;600;700&display=swap");
+#Container {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+}
+#Container > #userNameContainer{
+    color: white;
+}
+#Container > #userNameContainer>#userNameContainer_Name {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+#Container > #userNameContainer>#userNameContainer_Sentence {
+  font-family: "Cormorant Garamond", serif;
+  /* font-family: "Dancing Script", cursive; */
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 10px;
+}
+#Container > #datePlacecsContainer {
+  height: 550px;
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+  margin-top: 30px;
+  overflow-y: auto;
+
+  /* Firefox */
+  scrollbar-width: none;
+
+  /* IE and Edge */
+  -ms-overflow-style: none;
+}
+#Container > #datePlacecsContainer::-webkit-scrollbar {
+  display: none;
+}
+#Container > #datePlacecsContainer > .card {
+  height: 250px;
+  width: 250px;
+  border: 1px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 1s ease;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#Container > #datePlacecsContainer > .card:hover{
+    transform: scale(1.06);
+}
+.active {
+  border: 3px solid hotpink;
 }
