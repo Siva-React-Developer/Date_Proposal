@@ -12,32 +12,52 @@
   transform: translate(-50%, -50%);
   border: 1px solid black;
 }
-#Container > #userNameContainer{
+#Container > #inviteSentencesContainer{
     color: white;
+    padding: 0px 20px;
 }
-#Container > #userNameContainer>#userNameContainer_Name {
+#Container > #inviteSentencesContainer>#inviteSentencesContainer_Name {
   font-family: "Dancing Script", cursive;
   font-size: 2.5rem;
   font-weight: 700;
 }
-#Container > #userNameContainer>#userNameContainer_Sentence {
+#Container > #inviteSentencesContainer>#buttonContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#Container > #inviteSentencesContainer>#buttonContainer>#inviteSentencesContainer_invite {
   font-family: "Cormorant Garamond", serif;
   /* font-family: "Dancing Script", cursive; */
   font-size: 1.5rem;
   font-weight: 700;
-  margin-top: 10px;
+  margin-top: 8px;
+}
+#Container > #inviteSentencesContainer>#buttonContainer>#continue{
+    font-size: 18px;
+    padding: 10px 40px;
+    background-color: transparent;
+    border-radius: 8px;
+    outline: none;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.5s ease all;
+}
+#Container > #inviteSentencesContainer>#buttonContainer>#continue:hover{
+    transform: scale(1.05);
 }
 #Container > #datePlacecsContainer {
-  height: 550px;
+  height: 450px;
   width: 100%;
   border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 40px;
   padding: 20px;
-  margin-top: 30px;
+  margin-top: 20px;
   overflow-y: auto;
 
   /* Firefox */

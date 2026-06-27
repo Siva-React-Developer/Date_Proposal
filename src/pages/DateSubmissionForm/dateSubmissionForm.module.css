@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Dancing+Script:wght@500;600;700&display=swap");
+#parentContainer {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+}
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  height: 450px;
+  width: 300px;
+  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
+}
+#formTitle {
+  width: 100%;
+  padding: 15px 10px;
+  border: 1px solid black;
+  text-align: center;
+  background-color: rgba(255, 0, 234, 0.336);
+  color: white;
+  font-size: 16px;
+}
+#fieldsetContainer{
+    height: 398px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid black;
+}
+fieldset {
+  width: 280px;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 4px 15px 11px;
+  margin-bottom: 20px;
+}
+
+fieldset>legend {
+  color: black;
+  padding: 0 5px;
+  font-size: 16px;
+}
+
+fieldset>input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: black;
+  font-size: 15px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+#submit{
+    font-size: 15px;
+    padding: 12px 80px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: rgba(76, 0, 255, 0.747);
+}

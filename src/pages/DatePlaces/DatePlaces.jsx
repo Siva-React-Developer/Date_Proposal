@@ -2,9 +2,9 @@ import { useContext, useState } from "react";
 import BackgroundVideo from "../../components/BackgroundVideo/BackgroundVideo";
 import { ProposalContext } from "../../components/ProposalProvider";
 import style from "../DatePlaces/datePlaces.module.css";
+import { useNavigate } from "react-router-dom";
 
 const DatePlaces = () => {
-  const [selectedPlace, setSelectedPlace] = useState("");
   const places = [
     {
       id: 1,
@@ -79,17 +79,25 @@ const DatePlaces = () => {
     desc: "Enjoy a peaceful evening sailing together."
   },
   ];
+  const [selectedPlace, setSelectedPlace] = useState("");
   const content = useContext(ProposalContext);
+  const navigate=useNavigate()
+  const nextPage=()=>{
+    navigate("/dateSubmissionForm")
+  }
   return (
     <div>
       <BackgroundVideo />
       <div id={style.Container}>
-        <div id={style.userNameContainer}>
-          <p id={style.userNameContainer_Name}>Hey {content.name}🌹,</p>
-          <p id={style.userNameContainer_Sentence}>
+        <div id={style.inviteSentencesContainer}>
+          <p id={style.inviteSentencesContainer_Name}>Hey {content.name}🌹,</p>
+          <div id={style.buttonContainer}>
+            <p id={style.inviteSentencesContainer_invite}>
             Every love story starts somewhere... <br />
             Where would you like ours to begin?
           </p>
+          <button onClick={nextPage} id={style.continue}>Continue 🢂</button>
+          </div>
         </div>
         <div id={style.datePlacecsContainer}>
           {places.map((place) => {

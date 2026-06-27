@@ -4,6 +4,7 @@ import IntroProposal from "./pages/IntroPoposal/IntroProposal";
 import UserNamePage from "./pages/GetName/UserNamePage";
 import { useEffect } from "react";
 import DatePlaces from "./pages/DatePlaces/DatePlaces";
+import DateSubmissionForm from "./pages/DateSubmissionForm/DateSubmissionForm";
 
 const App = () => {
   useEffect(() => {
@@ -18,6 +19,7 @@ const App = () => {
       <Route element={<IntroProposal />} path="/" />
       <Route element={<UserNamePage />} path="/name" />
       <Route element={<DatePlaces />} path="/datePlaces" />
+      <Route element={<DateSubmissionForm />} path="/dateSubmissionForm" />
     </Routes>
   );
 };
