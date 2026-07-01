@@ -1,13 +1,19 @@
+import { useRef, useState } from "react";
 import BackgroundVideo from "../../components/BackgroundVideo/BackgroundVideo";
 import style from "./introProposal.module.css";
 import { Navigate, useNavigate } from "react-router-dom";
 
 const IntroProposal = () => {
-  // console.log(heartAnimation);
-  const navigate=useNavigate()
-  const Proposal_Reject = () => {
-    console.log("Reject");
-  };
+  
+  const navigate = useNavigate();
+  const [isEvent, setIsEvent] = useState(false);
+  const rej=useRef(null)
+  let reject = document.getElementById("dateProposal_No");
+  // if (isEvent) {
+  //   // reject.style.transform = "translateY(-20px)";
+  //   alert("hii")
+    
+  // }
 
   return (
     <main id={style.introPage}>
@@ -24,16 +30,24 @@ const IntroProposal = () => {
         </div>
         <div id={style.dateProposal_Yes_or_No}>
           <button
-            onClick={()=>{navigate("/name")}}
+            onClick={() => {
+              navigate("/name");
+            }}
             className={style.dateProposal_Buttons}
             id={style.dateProposal_Yes}
           >
             Yes, I'd Love To!❤️
           </button>
           <button
-            onClick={Proposal_Reject}
             className={style.dateProposal_Buttons}
             id={style.dateProposal_No}
+            ref={rej}
+            onMouseEnter={() => {
+              rej.current.style.transform="translateY(-20px)"
+            }}
+            onMouseLeave={() => {
+              rej.current.style.transform="translateY(0px)"
+            }}
           >
             No😒
           </button>

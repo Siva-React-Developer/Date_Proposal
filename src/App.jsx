@@ -5,6 +5,8 @@ import UserNamePage from "./pages/GetName/UserNamePage";
 import { useEffect } from "react";
 import DatePlaces from "./pages/DatePlaces/DatePlaces";
 import DateSubmissionForm from "./pages/DateSubmissionForm/DateSubmissionForm";
+import ThankYouPage from "./pages/ThankYouPage/ThankYouPage";
+import InvitationPage from "./pages/InvitationPage/InvitationPage";
 
 const App = () => {
   useEffect(() => {
@@ -20,6 +22,8 @@ const App = () => {
       <Route element={<UserNamePage />} path="/name" />
       <Route element={<DatePlaces />} path="/datePlaces" />
       <Route element={<DateSubmissionForm />} path="/dateSubmissionForm" />
+      <Route element={<ThankYouPage />} path="/thankyou" />
+      <Route element={<InvitationPage />} path="/invite" />
     </Routes>
   );
 };

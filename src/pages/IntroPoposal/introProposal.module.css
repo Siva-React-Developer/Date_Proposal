@@ -10,13 +10,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 1000px;
-  border: 1px solid black;
-  padding: 50px 0px;
-  color: white;
+  background-color: white;
+  /* border: 1px solid black; */
+  padding: 30px 30px;
+  border-radius: 8px;
 }
 #introPage > #dateProposal > #dateProposal_Content {
   width: 100%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 #introPage
   > #dateProposal
@@ -25,19 +26,21 @@
   font-family: "Cormorant Garamond", serif;
   font-size: 2rem;
   font-weight: 500;
+  color: rgb(252, 148, 78);
 }
 #introPage
   > #dateProposal
   > #dateProposal_Content
   > #dateProposal_Content_Question {
   font-family: "Dancing Script", cursive;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 700;
-  margin-top: 20px;
+  margin-top: 0px;
+  color: rgb(255, 121, 237);
 }
 #introPage > #dateProposal > #dateProposal_Yes_or_No {
   width: 100%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,12 +48,15 @@
   padding: 20px 0px;
 }
 #introPage > #dateProposal > #dateProposal_Yes_or_No > .dateProposal_Buttons {
-  background: transparent;
+  background: rgba(255, 0, 212, 0.37);
   outline: none;
-  border: 1px solid white;
+  border: none;
   padding: 15px 15px;
   border-radius: 8px;
   font-size: 16px;
   color: white;
   cursor: pointer;
+}
+#dateProposal_Yes:hover{
+  background: rgba(255, 0, 212, 0.918);
 }
