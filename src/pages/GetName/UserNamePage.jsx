@@ -49,7 +49,7 @@ const UserNamePage = () => {
             }}
           />
           <button type="submit" id={Style.continue}>
-            ➡️
+            🢂
           </button>
         </form>
       </div>

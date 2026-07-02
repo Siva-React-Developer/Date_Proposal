@@ -10,25 +10,29 @@
   left: 50%;
   width: 1000px;
   transform: translate(-50%,-50%);
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  background-color: white;
+  border-radius: 8px;
 }
 #container>#SentencesContainer{
   width: 100%;
-  color: white;
-  border: 1px solid black;
+  color: black;
+  /* border: 1px solid black; */
+  padding: 30px;
 }
 #container>#SentencesContainer>.SentencesContainer_info{
-  font-family: "Cormorant Garamond", serif;
-  font-size: 2rem;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.8rem;
   font-weight: 500;
+  color: blueviolet;
 }
 #container>#form{
   width: 100%;
-  padding: 20px 20px;
+  padding: 0px 20px 40px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 #container>#form>#input{
   height: 40px;
@@ -36,24 +40,29 @@
   padding:0px 58px 0px 20px;
   background: transparent;
   outline: none;
-  color: white;
+  color: rgb(255, 121, 237);
   border-radius: 6px;
   font-size: 15px;
   font-family: "Dancing Script", cursive;
 }
 #container>#form>#input::placeholder{
-  color: white;
+  color: rgb(255, 121, 237);
 }
 #container>#form>#continue{
+  color:rgb(255, 121, 237) ;
   background: transparent;
   border: none;
-  outline: none;
-  font-size: 36px;
+  font-size: 30px;
   cursor: pointer;
-  /* margin:-4px 0px 0px -45px; */
+  margin:-4px 0px 0px -45px;
+  transition: 0.6s ease all;
+}
+#container>#form>#continue:hover{
+  color:rgb(255, 0, 221) ;
+  transform: translateX(5px);
 }
 .redinput {
-  border: 1px solid white;
+  border: 2px solid rgb(255, 121, 237);
 }
 
 .errorInput {
@@ -61,5 +70,5 @@
 }
 
 .errorInput::placeholder {
-  color: red;
+  color: red !important;
 }

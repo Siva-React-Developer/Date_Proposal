@@ -4,7 +4,7 @@
   margin: 0;
 }
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Dancing+Script:wght@500;600;700&display=swap');
-#introPage > #dateProposal {
+#dateProposal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -15,30 +15,24 @@
   padding: 30px 30px;
   border-radius: 8px;
 }
-#introPage > #dateProposal > #dateProposal_Content {
+#dateProposal_Content {
   width: 100%;
   /* border: 1px solid black; */
 }
-#introPage
-  > #dateProposal
-  > #dateProposal_Content
-  > #dateProposal_Content_Quote {
+#dateProposal_Content_Quote {
   font-family: "Cormorant Garamond", serif;
   font-size: 2rem;
   font-weight: 500;
   color: rgb(252, 148, 78);
 }
-#introPage
-  > #dateProposal
-  > #dateProposal_Content
-  > #dateProposal_Content_Question {
+#dateProposal_Content_Question {
   font-family: "Dancing Script", cursive;
   font-size: 3.5rem;
   font-weight: 700;
   margin-top: 0px;
   color: rgb(255, 121, 237);
 }
-#introPage > #dateProposal > #dateProposal_Yes_or_No {
+#dateProposal_Yes_or_No {
   width: 100%;
   /* border: 1px solid black; */
   display: flex;
@@ -47,16 +41,17 @@
   gap: 15px;
   padding: 20px 0px;
 }
-#introPage > #dateProposal > #dateProposal_Yes_or_No > .dateProposal_Buttons {
-  background: rgba(255, 0, 212, 0.37);
-  outline: none;
+.dateProposal_Buttons {
+  background: rgba(255, 0, 212, 0.582);
   border: none;
   padding: 15px 15px;
   border-radius: 8px;
   font-size: 16px;
   color: white;
   cursor: pointer;
+  transition: 0.6s ease all;
 }
-#dateProposal_Yes:hover{
+.dateProposal_Buttons:hover{
   background: rgba(255, 0, 212, 0.918);
+  transform: scale(1.08);
 }

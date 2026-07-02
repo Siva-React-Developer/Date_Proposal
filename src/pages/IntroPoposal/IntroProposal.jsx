@@ -42,12 +42,6 @@ const IntroProposal = () => {
             className={style.dateProposal_Buttons}
             id={style.dateProposal_No}
             ref={rej}
-            onMouseEnter={() => {
-              rej.current.style.transform="translateY(-20px)"
-            }}
-            onMouseLeave={() => {
-              rej.current.style.transform="translateY(0px)"
-            }}
           >
             No😒
           </button>
